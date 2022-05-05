@@ -12,7 +12,8 @@
     "build": "taro build --type weapp",
     "dev": "npm run build -- --watch",
     "build:h5": "taro build --type h5",
-    "dev:h5": "npm run build:h5 -- --watch"
+    "dev:h5": "npm run build:h5 -- --watch",
+    "prod": "cd dist | /usr/local/bin/pm2 start /usr/local/bin/http-server -- -p 8001"
   },
   "browserslist": [
     "last 3 versions",
